@@ -49,3 +49,15 @@ https://download.kiwix.org/release/kiwix-tools/kiwix-tools_win-x86_64-3.8.1.zip
 上の版は、kiwix-tools 3.8.1 のリリースで kiwix-build が使った版です（kiwix-build のコミット `6f3a27d`、`kiwixbuild/versions.py`）。Windows 版の Xapian は [openzim/xapian-meson](https://github.com/openzim/xapian-meson)（コミット `d3efba1`）から作られます。これは Xapian 1.4.26 に Meson の組み立て用ファイルと、`common/io_utils.cc`・`common/safesysstat.h`（とテスト）の小さな修正を足したものです。Meson の組み立て用ファイルは `source/` に入れていません。組み立ては [kiwix-build](https://github.com/kiwix/kiwix-build) で行います。libmicrohttpd に Kiwix が足している Meson 用ファイルも入れていません。
 
 そのほかに組み込まれているライブラリ（curl、pugixml、zstd、zlib、ICU、docopt.cpp、mustache）は、ソースの写しを付けなくてよい許諾のものです。アプリ内の `THIRD-PARTY-NOTICES.txt` に載せています。ソースは各開発元から入手できます。作者へのメール（ikasumi.works@gmail.com）でも請求できます。
+
+## ライセンス
+
+ネット備蓄いかすみの本体は、ソースを公開していないアプリです。本体の無断での再配布・販売・改変した物の配布・逆コンパイル・リバースエンジニアリングは禁止しています。
+同梱しているプログラム（上の kiwix-tools など）は、それぞれのライセンスに従います。
+
+## License
+
+The main Ikasumi Offline Net app is closed source. Redistributing, selling, distributing modified versions of, decompiling or reverse engineering the main app without permission is not allowed.
+The bundled programs listed above (kiwix-tools and others) remain under their own licenses.
+
+Copyright © 2026 ikasumi works. All rights reserved.
